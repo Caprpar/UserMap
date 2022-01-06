@@ -20,7 +20,7 @@ my_map = folium.Map(s.map_location, tiles=s.maptype, zoom_start=s.zoom_start)
 
 # Fills user to map
 for user in users:
-    user.splash_user(my_map)
+    user.place_user(my_map)
 
 # Saves the index.html file that updates the map if new users are added or removed
 my_map.save("index.html")

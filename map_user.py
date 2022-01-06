@@ -43,10 +43,10 @@ class Map_user:
             icon=self.icon,
         ).add_to(map)
 
-    def fill_map(self, users, map):
-        """Fills out the map with all users"""
-        for user in users:
-            self.place_user(map)
+    # def fill_map(self, users, map):
+    #     """Fills out the map with all users"""
+    #     for user in users:
+    #         self.place_user(map)
 
     def _convertLocation(self, location):
         """
