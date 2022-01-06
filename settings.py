@@ -27,4 +27,9 @@ class Settings:
         self.use_url = self.gsheet_url.replace("/edit#gid=", "/export?format=csv&gid=")
 
         # ---Icons----
-        self.icon_size = (60, 60)
+        size = 50
+        self.icon_size = (size, size)
+
+        # ---Popup text----
+        self.max_height_popup = 200
+        self.min_width_popup = 180

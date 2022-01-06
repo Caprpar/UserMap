@@ -10,6 +10,8 @@ class Map_user:
         """Contains all the user values in a dictionary type"""
         s = Settings()
         self.user_values = user_values  # This is a dictionary
+        self.tooltip = user_values['name'].capitalize()
+        self.location = self._convertLocation(user_values['location'])
         self.icon = f"{self.user_values['name']}.png"
         self.icon_path = f"avatars/{self.icon}"
         self.age = self.user_values["age"]
@@ -32,20 +34,19 @@ class Map_user:
                 icon_image="avatars/null.png", icon_size=s.icon_size
             )
 
-    def splash_user(self, map):
+    def place_user(self, map):
         """Place out the user to the map"""
-        user = self.user_values
         folium.Marker(
-            location=self._convertLocation(user["location"]),
+            location=self.location,
             popup=self.user_popup,
-            tooltip=user["name"],
+            tooltip=self.tooltip,
             icon=self.icon,
         ).add_to(map)
 
     def fill_map(self, users, map):
         """Fills out the map with all users"""
         for user in users:
-            self.splash_user(map)
+            self.place_user(map)
 
     def _convertLocation(self, location):
         """
@@ -53,6 +54,8 @@ class Map_user:
         and the method converts the string to a list with floats for the script to use
         """
         new_loc = []
-        for item in location.split(","):
+        #splits the string to a list to work with
+        location = location.split(",")
+        for item in location:
             new_loc.append(float(item))
         return new_loc
