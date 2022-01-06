@@ -1,0 +1,10 @@
+tiles = ["cartodbdark_matter", 
+         "cartodbpositron",
+         "cartodbpositronnolabels",
+         "cartodbpositrononlylabels",
+         "openstreetmap",
+         "stamenterrain",
+         "stamentoner",
+         "stamentonerbackground",
+         "stamentonerlabels",
+         "stamenwatercolor"]
