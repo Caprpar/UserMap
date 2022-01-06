@@ -1,6 +1,7 @@
-name,age,location,favourite color,gmail,password
-Caspar,23,"57.107118, 12.2520907",blue,caspar@work.com,unicorns
-Philip,42,"59.33258, 18.0649",green,philip@work.com,apples
-Johan,23,"58.41086, 15.62157",red,johan@work.com,boomerangs
-Jessica,26,"56.67446, 12.85676",green,jessica@work.com,duck
-Olle,30,"57.107111,12.2520950",pink,olle@work.com,donkey
+name,location,icon,age,sex
+Caspar,"63.824, 20.252",caspar.png,23,male
+Philip,"59.33258, 18.0649",philip.png,42,male
+Johan,"58.41086, 15.62157",johan.png,23,male
+Jessica,"56.67446, 12.85676",jessica.png,26,female
+Olle,"57.107111,12.2520950",olle.png,30,male
+Tini,"47.497913, 19.040236",tini.png,4,hund
