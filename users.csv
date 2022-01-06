@@ -1,7 +1,7 @@
-name,location,icon,age,sex
-Caspar,"63.824, 20.252",caspar.png,23,male
-Philip,"59.33258, 18.0649",philip.png,42,male
-Johan,"58.41086, 15.62157",johan.png,23,male
-Jessica,"56.67446, 12.85676",jessica.png,26,female
-Olle,"57.107111,12.2520950",olle.png,30,male
-Tini,"47.497913, 19.040236",tini.png,4,hund
+name,location,age,sex
+caspar,"63.824, 20.252",23,male
+philip,"59.33258, 18.0649",42,male
+johan,"58.41086, 15.62157",23,male
+jessica,"56.67446, 12.85676",26,female
+olle,"57.107111,12.2520950",30,male
+tini,"47.497913, 19.040236",4,hund

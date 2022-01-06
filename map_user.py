@@ -8,7 +8,8 @@ class Map_user:
     def __init__(self, user_values):
         '''Contains all the user values in a dictionary type'''
         self.user_values = user_values  # This is a dictionary
-
+        self.icon = f"{self.user_values['name']}.png"
+        self.icon_path = f"avatars/{self.icon}"
         #options for the popup bubble
         popup_text = f"Age: {user_values['age']}<br>Sex: {user_values['sex']}"
         iframe = folium.IFrame(popup_text) 
@@ -16,10 +17,10 @@ class Map_user:
 
         #checks if the profilepicture exist, otherwise render a null.png 
         try:
-            self.icon = folium.features.CustomIcon(icon_image=self.user_values["icon"],
+            self.icon = folium.features.CustomIcon(icon_image=self.icon_path,
                                                    icon_size=(50, 50))
         except FileNotFoundError:
-            self.icon = folium.features.CustomIcon(icon_image="null.png",
+            self.icon = folium.features.CustomIcon(icon_image="avatars/null.png",
                                                    icon_size=(50, 50))
 
     def splash_user(self, map):
